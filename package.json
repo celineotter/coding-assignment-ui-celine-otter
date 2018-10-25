@@ -1,0 +1,39 @@
+{
+  "name": "coding-assignment-ui-celine-otter",
+  "version": "1.0.0",
+  "description": "Coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently 'webpack --watch' 'node api.js' --kill-others --raw"
+  },
+  "author": "celineotter",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "concurrently": "^3.5.1",
+    "core-js": "^2.4.1",
+    "es6": "0.0.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "json-loader": "^0.5.7",
+    "moment-timezone": "^0.5.21",
+    "node-sass": "^4.0.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router-dom": "^4.3.1",
+    "rxjs": "5.0.0-rc.4",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "sass-loader": "^4.1.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0"
+  }
+}
