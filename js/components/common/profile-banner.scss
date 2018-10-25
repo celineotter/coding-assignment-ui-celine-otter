@@ -1,0 +1,33 @@
+.profile-banner {
+    height: 130px;
+    background-color: #00AABB;
+
+    &-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-row {
+      display: flex;
+      position: relative;
+      height: 100%;
+    }
+    &-img-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    &-user-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: 150px;
+      padding-left: 30px;
+    }
+  }

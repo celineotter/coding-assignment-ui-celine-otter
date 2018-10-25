@@ -1,0 +1,13 @@
+.card {
+  max-width: 400px;
+  color: #4a4747;
+
+  &-body-row {
+    display: flex;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
