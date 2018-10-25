@@ -2,7 +2,7 @@ import React from 'react';
 
 import './card.scss';
 
-const SpitBody = ({ bodyLeft, bodyRight }) => (
+const SplitBody = ({ bodyLeft, bodyRight }) => (
   <div className="card-body-row">
     <div className="card-body-left">{bodyLeft}</div>
     <div className="card-body-right">{bodyRight}</div>
@@ -15,7 +15,7 @@ const Card = ({ type, header, bodyLeft, bodyRight, onSubmit}) => {
       <div className="card mb-3">
         <div className="card-header bg-transparent">{header}</div>
         <div className="card-body">
-          <SpitBody bodyLeft={bodyLeft} bodyRight={bodyRight}/>
+          <SplitBody bodyLeft={bodyLeft} bodyRight={bodyRight}/>
         </div>
         <div className="card-footer bg-transparent float-right">
           <button type="submit" className="btn btn-info">Submit</button>
