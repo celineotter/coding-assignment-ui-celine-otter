@@ -1,6 +1,6 @@
 ## Setup
 ```sh
-// Node - node 8 is required
+// Please Note - node 8 is required
 $ npm install
 $ npm start
 ```
