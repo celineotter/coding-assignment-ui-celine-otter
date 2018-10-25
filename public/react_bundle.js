@@ -25971,7 +25971,7 @@
 
 
 	// module
-	exports.push([module.id, ".header {\n  height: 60px;\n  background-color: #FFFFFF;\n  box-shadow: 0 5px 20px 0 #607d8b; }\n  .header ul {\n    margin: 0;\n    padding: 0; }\n  .header a {\n    text-decoration: none; }\n  .header-row {\n    height: 100%;\n    max-width: 1300px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between; }\n    .header-row-left, .header-row-right {\n      display: flex;\n      justify-content: space-between; }\n  .header-nav {\n    list-style: none; }\n  .header-link {\n    height: 100%;\n    padding: 0 13px;\n    display: flex;\n    align-items: center;\n    text-align: center;\n    color: #7F7F7F; }\n    .header-link:hover {\n      background-color: #00ABBA;\n      color: #FFFFFF;\n      border-color: #00ABBA;\n      background-color: #00abba; }\n  .header-logo-container {\n    height: 100%;\n    display: flex;\n    align-items: center; }\n    .header-logo-container .header-logo {\n      height: 50%; }\n", ""]);
+	exports.push([module.id, ".header {\n  height: 60px;\n  background-color: #FFFFFF;\n  box-shadow: 0 5px 20px 0 #607d8b; }\n  .header ul {\n    margin: 0;\n    padding: 0; }\n  .header a {\n    text-decoration: none; }\n  .header-row {\n    height: 100%;\n    max-width: 1300px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between; }\n    .header-row-left, .header-row-right {\n      display: flex; }\n  .header-nav {\n    list-style: none; }\n  .header-link {\n    height: 100%;\n    padding: 0 13px;\n    display: flex;\n    align-items: center;\n    text-align: center;\n    color: #7F7F7F; }\n    .header-link:hover {\n      background-color: #00ABBA;\n      color: #FFFFFF;\n      border-color: #00ABBA;\n      background-color: #00ABBA; }\n  .header-logo-container {\n    height: 100%;\n    padding: 0 13px;\n    display: flex;\n    align-items: center; }\n    .header-logo-container .header-logo {\n      height: 50%; }\n", ""]);
 
 	// exports
 
@@ -26561,6 +26561,11 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var headers = {
+	  generalInfo: 'General Contact Information',
+	  digitalInfo: 'Further Contact Information'
+	};
+
 	var leftPanel = {
 	  generalInfo: [{ label: 'First Name', type: 'text' }, { label: 'Home Address', type: 'text' }],
 	  digitalInfo: [{ label: 'Personal Email', type: 'email' }, { label: 'Work Email', type: 'email' }]
@@ -26589,7 +26594,7 @@
 	      onSubmit = _ref.onSubmit;
 
 	  return _react2.default.createElement(_Card2.default, {
-	    header: 'General Contact Info',
+	    header: headers[type],
 	    bodyLeft: _react2.default.createElement(
 	      'div',
 	      null,
@@ -26624,7 +26629,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var SpitBody = function SpitBody(_ref) {
+	var SplitBody = function SplitBody(_ref) {
 	  var bodyLeft = _ref.bodyLeft,
 	      bodyRight = _ref.bodyRight;
 	  return _react2.default.createElement(
@@ -26664,7 +26669,7 @@
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'card-body' },
-	        _react2.default.createElement(SpitBody, { bodyLeft: bodyLeft, bodyRight: bodyRight })
+	        _react2.default.createElement(SplitBody, { bodyLeft: bodyLeft, bodyRight: bodyRight })
 	      ),
 	      _react2.default.createElement(
 	        'div',

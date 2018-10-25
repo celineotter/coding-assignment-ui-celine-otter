@@ -21,7 +21,6 @@
 
     &-left, &-right {
       display: flex;
-      justify-content: space-between;
     }
   }
 
@@ -41,12 +40,13 @@
       background-color: #00ABBA;
       color: #FFFFFF;
       border-color: #00ABBA;
-      background-color: #00abba;
+      background-color: #00ABBA;
     }
   }
 
   &-logo-container {
     height: 100%;
+    padding: 0 13px;
     display: flex;
     align-items: center;
 
